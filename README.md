@@ -14,7 +14,7 @@ The compiler gives you **creator functions** to compose a patch. These functions
 add elements to the patch, using the content and connections you provide.
 
 ```python
-from puredata_compiler import Patch, write_file
+from puredata_compiler import Patch
 
 
 def example():
