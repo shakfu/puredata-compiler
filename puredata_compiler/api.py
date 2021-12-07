@@ -494,8 +494,6 @@ class Patch:
         out += ''.join([str(c) for c in self.connections])
         return out
 
-
-def write_file(filename: str, data: str):
-    fp = open(filename, 'w')
-    fp.write(data)
-    fp.close()
+    def save_as(self, filename: str):
+        with open(filename, 'w') as f:
+            f.write(str(self))

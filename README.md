@@ -38,8 +38,9 @@ def example():
     return patch
 
 if __name__ == "__main__":
-    pd_example = example()
-    write_file('pd_example.pd', str(pd_example))
+    patch = example()
+    patch.save_as('pd_example.pd')
+
 ```
 
 ### Result
