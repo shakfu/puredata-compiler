@@ -1,4 +1,4 @@
-from puredata_compiler import Patch, write_file
+from puredata_compiler import Patch
 
 # pylint: disable=unused-variable
 
@@ -67,5 +67,5 @@ def example() -> Patch:
 
 
 if __name__ == "__main__":
-    pd_example = example()
-    write_file('pd_example.pd', str(pd_example))
+    patch = example()
+    patch.save_as('pd_example.pd')
